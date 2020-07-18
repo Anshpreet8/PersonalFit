@@ -9,7 +9,16 @@
 import UIKit
 
 class GetStartedViewController: UIViewController {
-
+    
+    var timer = Timer()
+    var TimerDisplayed = 0
+    
+    
+    @IBOutlet weak var timerLabel: UILabel!
+    
+    @IBAction func startButton(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

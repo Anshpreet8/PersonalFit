@@ -72,9 +72,42 @@
                     <view key="view" contentMode="scaleToFill" id="HVK-bJ-luD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue" translatesAutoresizingMaskIntoConstraints="NO" id="qM3-yB-49k">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEs-Mg-yKk">
+                                <rect key="frame" x="165" y="554" width="84" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButton:" destination="wxX-fX-1vc" eventType="touchUpInside" id="hXa-F4-aL7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLS-9j-dEU">
+                                <rect key="frame" x="175" y="360" width="65" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="51"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qM3-yB-49k" firstAttribute="top" secondItem="Swa-9y-Ya9" secondAttribute="top" id="Ris-1G-FiT"/>
+                            <constraint firstItem="qM3-yB-49k" firstAttribute="leading" secondItem="Swa-9y-Ya9" secondAttribute="leading" id="Rrp-yu-fc9"/>
+                            <constraint firstItem="Swa-9y-Ya9" firstAttribute="trailing" secondItem="qM3-yB-49k" secondAttribute="trailing" id="S11-MA-6pe"/>
+                            <constraint firstItem="Swa-9y-Ya9" firstAttribute="bottom" secondItem="qM3-yB-49k" secondAttribute="bottom" id="uD4-d0-qwO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Swa-9y-Ya9"/>
                     </view>
+                    <navigationItem key="navigationItem" id="pBf-z3-CWU"/>
+                    <connections>
+                        <outlet property="timerLabel" destination="vLS-9j-dEU" id="HTa-6d-zvW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pvz-cF-Ulq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,6 +116,7 @@
     </scenes>
     <resources>
         <image name="background-1" width="349" height="620.66668701171875"/>
+        <image name="blue" width="360" height="640"/>
         <image name="pf" width="220" height="220"/>
     </resources>
 </document>
