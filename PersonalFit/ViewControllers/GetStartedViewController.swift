@@ -27,6 +27,7 @@ class GetStartedViewController: UIViewController {
     
     @objc func Action(){
         
+        
         timerDisplayed -= 1
         timerLabel.text = String(timerDisplayed)
         
@@ -50,6 +51,18 @@ class GetStartedViewController: UIViewController {
         
         
         // to stop: timer.invalidate
+        
+    }
+    
+    // Reset button
+    
+    @IBAction func resetButton(_ sender: Any) {
+        
+        timer.invalidate()
+        timerDisplayed = 30
+        whichTimer = 0
+        numTimes = 1
+        timerLabel.text = String(timerDisplayed)
         
     }
     

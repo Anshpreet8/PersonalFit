@@ -77,7 +77,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEs-Mg-yKk">
-                                <rect key="frame" x="156" y="554" width="84" height="53"/>
+                                <rect key="frame" x="156" y="528" width="84" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
                                 <state key="normal" title="Start">
@@ -102,6 +102,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBb-Sa-8rM">
+                                <rect key="frame" x="160" y="589" width="76" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButton:" destination="wxX-fX-1vc" eventType="touchUpInside" id="SnG-nk-Ohv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
