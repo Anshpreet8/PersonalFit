@@ -11,7 +11,8 @@ import UIKit
 class GetStartedViewController: UIViewController {
     
     var timer = Timer()
-    var timerDisplayed = 30
+    var timerDisplayed = 30 // the duration time
+    var timeRemaining = 0
     var whichTimer = 0 // will either be 1 or 2
     var numTimes = 1 // how many times the timer has run
     
@@ -28,18 +29,18 @@ class GetStartedViewController: UIViewController {
     @objc func Action(){
         
         
-        timerDisplayed -= 1
-        timerLabel.text = String(timerDisplayed)
+        timeRemaining -= 1
+        timerLabel.text = String(timeRemaining)
         
-        if (timerDisplayed == -1 && whichTimer == 0){
-            timerDisplayed = 11
-            timerDisplayed -= 1
-            timerLabel.text = String(timerDisplayed)
+        if (timeRemaining == -1 && whichTimer == 0){
+            timeRemaining = 11
+            timeRemaining -= 1
+            timerLabel.text = String(timeRemaining)
             whichTimer += 1
-        } else if (timerDisplayed == -1 && whichTimer == 1) {
-            timerDisplayed = 31
-            timerDisplayed -= 1
-            timerLabel.text = String(timerDisplayed)
+        } else if (timeRemaining == -1 && whichTimer == 1) {
+            timeRemaining = timerDisplayed
+            timeRemaining -= 1
+            timerLabel.text = String(timeRemaining)
             whichTimer -= 1
             numTimes += 1
         }
@@ -69,6 +70,9 @@ class GetStartedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        // puts the duration right away on the screen b4 start btn is tapped
+        timerLabel.text = String(timeRemaining)
     }
 
 
