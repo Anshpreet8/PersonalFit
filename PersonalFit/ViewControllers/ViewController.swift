@@ -15,27 +15,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var durationField: UITextField!
     @IBOutlet weak var breaksField: UITextField!
     
+    var reps = 0
     var duration = 0
+    var breaks = 0
     
     // get started button
     @IBAction func getStarted(_ sender: Any) {
         
+        // convert the text to integers
+        self.reps = Int(repsField.text!)!
         self.duration = Int(durationField.text!)!
+        self.breaks = Int(breaksField.text!)!
         
         self.performSegue(withIdentifier: "secondSegue", sender: self)
-        
-        // let repsText = Int(repsField.text!)
-         
-        // let breaks = Double(breaksField.text!)
         
     }
     
     // passes the variables to the get started view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         let vc = segue.destination as! GetStartedViewController
         vc.timerDisplayed = self.duration + 1
         vc.timeRemaining = self.duration
-        
+        vc.numReps = self.reps
+        vc.breaksTime = self.breaks
         
     }
     

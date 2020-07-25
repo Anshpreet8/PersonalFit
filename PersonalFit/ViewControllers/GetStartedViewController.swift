@@ -13,6 +13,8 @@ class GetStartedViewController: UIViewController {
     var timer = Timer()
     var timerDisplayed = 30 // the duration time
     var timeRemaining = 0
+    var numReps = 6
+    var breaksTime = 10
     var whichTimer = 0 // will either be 1 or 2
     var numTimes = 1 // how many times the timer has run
     
@@ -26,6 +28,7 @@ class GetStartedViewController: UIViewController {
         
     }
     
+    // what happens when start btn is pressed
     @objc func Action(){
         
         
@@ -33,7 +36,7 @@ class GetStartedViewController: UIViewController {
         timerLabel.text = String(timeRemaining)
         
         if (timeRemaining == -1 && whichTimer == 0){
-            timeRemaining = 11
+            timeRemaining = breaksTime + 1
             timeRemaining -= 1
             timerLabel.text = String(timeRemaining)
             whichTimer += 1
@@ -45,7 +48,7 @@ class GetStartedViewController: UIViewController {
             numTimes += 1
         }
         
-        if (numTimes == 6){
+        if (numTimes == numReps){
             timer.invalidate()
             numTimes = 0
         }
@@ -60,10 +63,10 @@ class GetStartedViewController: UIViewController {
     @IBAction func resetButton(_ sender: Any) {
         
         timer.invalidate()
-        timerDisplayed = 30
+        timeRemaining = timerDisplayed - 1
         whichTimer = 0
         numTimes = 1
-        timerLabel.text = String(timerDisplayed)
+        timerLabel.text = String(timeRemaining)
         
     }
     
