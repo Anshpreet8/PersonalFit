@@ -16,7 +16,7 @@ class GetStartedViewController: UIViewController {
     var numReps = 6
     var breaksTime = 10
     var whichTimer = 0 // will either be 1 or 2
-    var numTimes = 1 // how many times the timer has run
+    var numTimes = 0 // how many times the timer has run
     
     
     @IBOutlet weak var timerLabel: UILabel!
@@ -59,13 +59,12 @@ class GetStartedViewController: UIViewController {
     }
     
     // Reset button
-    
     @IBAction func resetButton(_ sender: Any) {
         
         timer.invalidate()
         timeRemaining = timerDisplayed - 1
         whichTimer = 0
-        numTimes = 1
+        numTimes = 0
         timerLabel.text = String(timeRemaining)
         
     }
