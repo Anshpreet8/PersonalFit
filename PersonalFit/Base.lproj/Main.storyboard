@@ -83,6 +83,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="af5-yf-Zq7" eventType="touchUpInside" id="EEo-RN-rOk"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gN-Sa-jI9">
                                         <rect key="frame" x="0.0" y="180" width="334" height="20.333333333333343"/>
@@ -106,6 +109,12 @@
                         <viewLayoutGuide key="safeArea" id="8A0-MR-rZh"/>
                     </view>
                     <navigationItem key="navigationItem" id="p94-SP-7sd"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="NNc-9Y-Inn" id="IwB-k4-gYc"/>
+                        <outlet property="errorLabel" destination="1gN-Sa-jI9" id="JBL-tt-fEN"/>
+                        <outlet property="loginButton" destination="VZo-dL-9Yp" id="hq5-gS-cqa"/>
+                        <outlet property="passwordTextField" destination="PGv-xJ-qhX" id="aYe-lk-HgJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="75b-3R-1OC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,6 +158,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="signUpTapped:" destination="Ib2-SM-ppl" eventType="touchUpInside" id="SdN-YW-wdv"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMr-1o-gmL">
                                         <rect key="frame" x="0.0" y="276" width="334" height="23"/>
@@ -174,6 +186,14 @@
                         <viewLayoutGuide key="safeArea" id="7zH-zA-0VJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="I0r-bu-Pxf"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="zSK-XE-qm9" id="e1F-UQ-3mD"/>
+                        <outlet property="errorLabel" destination="wMr-1o-gmL" id="B5f-Ib-Rj4"/>
+                        <outlet property="firstNameTextField" destination="5EH-8V-t7t" id="ZjL-eE-Esd"/>
+                        <outlet property="lastNameTextField" destination="zCC-iD-8VH" id="8QY-hK-lnY"/>
+                        <outlet property="passwordTextField" destination="L4u-UG-Gtr" id="PVO-Fe-bcj"/>
+                        <outlet property="signUpButton" destination="hSp-hU-hkX" id="Jow-P5-omg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5t-7a-xIq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

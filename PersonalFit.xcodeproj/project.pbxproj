@@ -16,6 +16,7 @@
 		8A17E78824C103D200D65962 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17E78724C103D200D65962 /* GetStartedViewController.swift */; };
 		8A17E78D24CDDBCD00D65962 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17E78C24CDDBCD00D65962 /* SignUpViewController.swift */; };
 		8A17E78F24CDDC0100D65962 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17E78E24CDDC0100D65962 /* LoginViewController.swift */; };
+		8A17E79124CF8C4C00D65962 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17E79024CF8C4C00D65962 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8A17E78724C103D200D65962 /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
 		8A17E78C24CDDBCD00D65962 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8A17E78E24CDDC0100D65962 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8A17E79024CF8C4C00D65962 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				8A17E78E24CDDC0100D65962 /* LoginViewController.swift */,
 				8A17E77724BE66AF00D65962 /* HomeViewController.swift */,
 				8A17E78724C103D200D65962 /* GetStartedViewController.swift */,
+				8A17E79024CF8C4C00D65962 /* ViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				8A17E78D24CDDBCD00D65962 /* SignUpViewController.swift in Sources */,
 				8A17E77824BE66AF00D65962 /* HomeViewController.swift in Sources */,
 				8A17E77424BE66AF00D65962 /* AppDelegate.swift in Sources */,
+				8A17E79124CF8C4C00D65962 /* ViewController.swift in Sources */,
 				8A17E77624BE66AF00D65962 /* SceneDelegate.swift in Sources */,
 				8A17E78824C103D200D65962 /* GetStartedViewController.swift in Sources */,
 			);
