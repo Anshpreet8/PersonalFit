@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>850304446664-mrl7fbcjc5rppuoer2jk4cbfcgoprij3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.850304446664-mrl7fbcjc5rppuoer2jk4cbfcgoprij3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC4xxmQ6X_MpNUXOr84hZXccayKhAICMpo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>850304446664</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Anshpreet.PersonalFit</string>
+	<key>PROJECT_ID</key>
+	<string>logindemo-2d036</string>
+	<key>STORAGE_BUCKET</key>
+	<string>logindemo-2d036.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:850304446664:ios:0750fbcc22b6a72ce2f5fd</string>
+	<key>DATABASE_URL</key>
+	<string>https://logindemo-2d036.firebaseio.com</string>
+</dict>
+</plist>

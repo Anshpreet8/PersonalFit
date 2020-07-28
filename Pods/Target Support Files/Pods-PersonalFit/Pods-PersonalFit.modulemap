@@ -1,0 +1,6 @@
+framework module Pods_PersonalFit {
+  umbrella header "Pods-PersonalFit-umbrella.h"
+
+  export *
+  module * { export * }
+}
