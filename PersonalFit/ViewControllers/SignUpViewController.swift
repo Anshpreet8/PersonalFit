@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class SignUpViewController: UIViewController {
     
@@ -44,8 +46,57 @@ class SignUpViewController: UIViewController {
     }
     */
     
+    // check the fields and validate data is correct. If everything is correct, this methods returns nil, otherwise returns error msg
+    func validatFields() -> String? {
+        
+        // check all fields are filled in
+        if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
+            return "Please fill in all fields"
+        }
+        
+        
+        
+        return nil
+        
+    }
     
     @IBAction func signUpTapped(_ sender: Any) {
+        
+        // validate the fields
+        let error = validatFields()
+        
+        if error != nil {
+            // theres something wrong with fields, show error msg
+            showError(error!)
+        } else {
+            
+            // create the user
+            Auth.auth().createUser(withEmail: <#T##String#>, password: <#T##String#>) { (result, err) in
+                
+                // check for errors
+                if err != nil {
+                    // there was an error creating the user
+                    self.showError("Error creating user")
+                } else {
+                    // user was created successfully, store first and last name
+                    
+                }
+                
+            }
+                   
+           // transition to the homescreen
+        }
+        
+       
+        
+    }
+    
+    func showError(_ message:String) {
+        errorLabel.text = message
+        errorLabel.alpha = 1
     }
     
 }
