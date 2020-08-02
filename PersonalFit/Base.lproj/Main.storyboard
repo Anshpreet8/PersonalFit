@@ -129,7 +129,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="c3z-MD-fcd">
-                                <rect key="frame" x="40" y="222" width="334" height="299"/>
+                                <rect key="frame" x="40" y="180" width="334" height="299"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5EH-8V-t7t">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="34"/>
@@ -176,12 +176,21 @@
                                     <constraint firstItem="zSK-XE-qm9" firstAttribute="width" secondItem="5EH-8V-t7t" secondAttribute="width" id="sKO-tO-rbY"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="951-z5-ApD">
+                                <rect key="frame" x="111" y="656" width="192" height="30"/>
+                                <state key="normal" title="Continue without signing up"/>
+                                <connections>
+                                    <action selector="continueButton:" destination="Ib2-SM-ppl" eventType="touchUpInside" id="N3l-v4-OkL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="c3z-MD-fcd" firstAttribute="leading" secondItem="7zH-zA-0VJ" secondAttribute="leading" constant="40" id="48J-Dm-SPb"/>
+                            <constraint firstItem="7zH-zA-0VJ" firstAttribute="bottom" secondItem="951-z5-ApD" secondAttribute="bottom" constant="50" id="5EZ-TE-7qu"/>
+                            <constraint firstItem="951-z5-ApD" firstAttribute="centerX" secondItem="qBx-HR-M1P" secondAttribute="centerX" id="Vo1-Vz-VZ8"/>
                             <constraint firstItem="7zH-zA-0VJ" firstAttribute="trailing" secondItem="c3z-MD-fcd" secondAttribute="trailing" constant="40" id="Wp0-AW-iDl"/>
-                            <constraint firstItem="c3z-MD-fcd" firstAttribute="top" secondItem="7zH-zA-0VJ" secondAttribute="top" constant="222" id="gfJ-3T-N5u"/>
+                            <constraint firstItem="c3z-MD-fcd" firstAttribute="top" secondItem="7zH-zA-0VJ" secondAttribute="top" constant="180" id="gfJ-3T-N5u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7zH-zA-0VJ"/>
                     </view>

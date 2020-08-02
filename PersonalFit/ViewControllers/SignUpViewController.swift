@@ -114,6 +114,12 @@ class SignUpViewController: UIViewController {
         
     }
     
+    // incase the signup doesnt work
+    @IBAction func continueButton(_ sender: Any) {
+        transitionToHome()
+    }
+    
+    //shows the error message in the label
     func showError(_ message:String) {
         errorLabel.text = message
         errorLabel.alpha = 1
