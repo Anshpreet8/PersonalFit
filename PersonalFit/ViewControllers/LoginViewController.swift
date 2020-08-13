@@ -80,6 +80,8 @@ class LoginViewController: UIViewController {
         errorLabel.alpha = 1
     }
     
+    // changing
+    
     func transitionToHome() {
         
         let homeViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? HomeViewController
