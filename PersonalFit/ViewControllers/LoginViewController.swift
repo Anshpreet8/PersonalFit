@@ -22,6 +22,11 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    // incase logging in doesn't work
+    @IBAction func continueButton(_ sender: Any) {
+        transitionToHome()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

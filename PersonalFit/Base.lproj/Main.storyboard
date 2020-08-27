@@ -15,6 +15,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue" translatesAutoresizingMaskIntoConstraints="NO" id="9vV-hl-WST">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ebv-Un-gq7">
                                 <rect key="frame" x="40" y="606" width="334" height="90"/>
                                 <subviews>
@@ -40,11 +43,26 @@
                                     <constraint firstItem="mmq-nv-c5z" firstAttribute="height" secondItem="KG3-zk-3fC" secondAttribute="height" multiplier="0.75" id="7QS-GV-u2P"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pf" translatesAutoresizingMaskIntoConstraints="NO" id="4lV-jh-Ovn">
+                                <rect key="frame" x="87" y="264" width="240" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PersonalFit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mq3-bA-a2a">
+                                <rect key="frame" x="87" y="64" width="334" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="59s-aC-miQ" firstAttribute="trailing" secondItem="9vV-hl-WST" secondAttribute="trailing" id="1Ur-Ru-qkD"/>
                             <constraint firstItem="Ebv-Un-gq7" firstAttribute="leading" secondItem="59s-aC-miQ" secondAttribute="leading" constant="40" id="4kR-iX-aT6"/>
+                            <constraint firstItem="9vV-hl-WST" firstAttribute="leading" secondItem="59s-aC-miQ" secondAttribute="leading" id="Gpa-Ur-f1j"/>
                             <constraint firstItem="59s-aC-miQ" firstAttribute="bottom" secondItem="Ebv-Un-gq7" secondAttribute="bottom" constant="40" id="UVh-zv-lCg"/>
+                            <constraint firstItem="59s-aC-miQ" firstAttribute="bottom" secondItem="9vV-hl-WST" secondAttribute="bottom" id="hZ9-iF-hag"/>
+                            <constraint firstItem="9vV-hl-WST" firstAttribute="top" secondItem="59s-aC-miQ" secondAttribute="top" id="ueS-r0-6yC"/>
                             <constraint firstItem="59s-aC-miQ" firstAttribute="trailing" secondItem="Ebv-Un-gq7" secondAttribute="trailing" constant="40" id="vy0-cp-BR3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="59s-aC-miQ"/>
@@ -53,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kLr-Jx-jdX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-687" y="103"/>
+            <point key="canvasLocation" x="-688.40579710144937" y="102.71739130434783"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="B9a-rA-SWP">
@@ -63,8 +81,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SpX-wr-kYr">
-                                <rect key="frame" x="40" y="80.000000000000014" width="334" height="200.33333333333337"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue" translatesAutoresizingMaskIntoConstraints="NO" id="0Xi-W7-L7W">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SpX-wr-kYr">
+                                <rect key="frame" x="40" y="250" width="334" height="200.33333333333337"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NNc-9Y-Inn">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
@@ -99,11 +120,30 @@
                                     <constraint firstItem="PGv-xJ-qhX" firstAttribute="height" secondItem="NNc-9Y-Inn" secondAttribute="height" id="a9h-C7-y6u"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PersonalFit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqb-IM-bVo">
+                                <rect key="frame" x="126" y="49" width="163" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUi-ph-Wrb">
+                                <rect key="frame" x="113" y="604" width="188" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Continue without logging in"/>
+                                <connections>
+                                    <action selector="continueButton:" destination="af5-yf-Zq7" eventType="touchUpInside" id="dsg-0w-PKN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="8A0-MR-rZh" firstAttribute="trailing" secondItem="SpX-wr-kYr" secondAttribute="trailing" constant="40" id="2eG-Da-x6h"/>
                             <constraint firstItem="SpX-wr-kYr" firstAttribute="leading" secondItem="8A0-MR-rZh" secondAttribute="leading" constant="40" id="UF7-Gs-ydo"/>
+                            <constraint firstItem="8A0-MR-rZh" firstAttribute="trailing" secondItem="0Xi-W7-L7W" secondAttribute="trailing" id="WA1-IU-yl2"/>
+                            <constraint firstItem="0Xi-W7-L7W" firstAttribute="leading" secondItem="8A0-MR-rZh" secondAttribute="leading" id="WaN-Fj-1lZ"/>
+                            <constraint firstItem="0Xi-W7-L7W" firstAttribute="top" secondItem="8A0-MR-rZh" secondAttribute="top" id="cPC-59-ZFz"/>
+                            <constraint firstItem="8A0-MR-rZh" firstAttribute="bottom" secondItem="0Xi-W7-L7W" secondAttribute="bottom" id="g6g-vJ-g2R"/>
                             <constraint firstItem="SpX-wr-kYr" firstAttribute="top" secondItem="8A0-MR-rZh" secondAttribute="top" constant="80" id="vkv-xv-a5w"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8A0-MR-rZh"/>
@@ -128,6 +168,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue" translatesAutoresizingMaskIntoConstraints="NO" id="0iC-6M-5e8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="c3z-MD-fcd">
                                 <rect key="frame" x="40" y="180" width="334" height="299"/>
                                 <subviews>
@@ -183,13 +226,24 @@
                                     <action selector="continueButton:" destination="Ib2-SM-ppl" eventType="touchUpInside" id="N3l-v4-OkL"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PersonalFit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHS-mw-Eb3">
+                                <rect key="frame" x="131" y="43" width="153" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="c3z-MD-fcd" firstAttribute="leading" secondItem="7zH-zA-0VJ" secondAttribute="leading" constant="40" id="48J-Dm-SPb"/>
                             <constraint firstItem="7zH-zA-0VJ" firstAttribute="bottom" secondItem="951-z5-ApD" secondAttribute="bottom" constant="50" id="5EZ-TE-7qu"/>
+                            <constraint firstItem="0iC-6M-5e8" firstAttribute="leading" secondItem="7zH-zA-0VJ" secondAttribute="leading" id="5Ot-vW-KR3"/>
+                            <constraint firstItem="7zH-zA-0VJ" firstAttribute="bottom" secondItem="0iC-6M-5e8" secondAttribute="bottom" id="Pes-c6-mey"/>
                             <constraint firstItem="951-z5-ApD" firstAttribute="centerX" secondItem="qBx-HR-M1P" secondAttribute="centerX" id="Vo1-Vz-VZ8"/>
                             <constraint firstItem="7zH-zA-0VJ" firstAttribute="trailing" secondItem="c3z-MD-fcd" secondAttribute="trailing" constant="40" id="Wp0-AW-iDl"/>
+                            <constraint firstItem="7zH-zA-0VJ" firstAttribute="trailing" secondItem="0iC-6M-5e8" secondAttribute="trailing" id="aB3-5r-woU"/>
+                            <constraint firstItem="0iC-6M-5e8" firstAttribute="top" secondItem="7zH-zA-0VJ" secondAttribute="top" id="bF9-6f-eQQ"/>
                             <constraint firstItem="c3z-MD-fcd" firstAttribute="top" secondItem="7zH-zA-0VJ" secondAttribute="top" constant="180" id="gfJ-3T-N5u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7zH-zA-0VJ"/>
@@ -206,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5t-7a-xIq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="83" y="-319"/>
+            <point key="canvasLocation" x="82.608695652173921" y="-319.56521739130437"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">

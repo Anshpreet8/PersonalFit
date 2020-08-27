@@ -19,6 +19,7 @@
 		8A17E79124CF8C4C00D65962 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17E79024CF8C4C00D65962 /* ViewController.swift */; };
 		8A17E79324D0D95000D65962 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A17E79224D0D95000D65962 /* GoogleService-Info.plist */; };
 		8A17E79524D4EC3200D65962 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17E79424D4EC3200D65962 /* Constants.swift */; };
+		8AB6228C24E5F03F00839017 /* a.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8AB6228B24E5F03F00839017 /* a.mp4 */; };
 		AD6FF8B47D749A8E6E757CDD /* Pods_PersonalFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A37B93526FB8B529F254BB9 /* Pods_PersonalFit.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		8A17E79024CF8C4C00D65962 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8A17E79224D0D95000D65962 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A17E79424D4EC3200D65962 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8AB6228B24E5F03F00839017 /* a.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		8A17E77224BE66AF00D65962 /* PersonalFit */ = {
 			isa = PBXGroup;
 			children = (
+				8AB6228A24E5F01700839017 /* Media */,
 				8A17E79424D4EC3200D65962 /* Constants.swift */,
 				8A17E78924C1052D00D65962 /* ViewControllers */,
 				8A17E77324BE66AF00D65962 /* AppDelegate.swift */,
@@ -107,6 +110,14 @@
 				8A17E79024CF8C4C00D65962 /* ViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8AB6228A24E5F01700839017 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				8AB6228B24E5F03F00839017 /* a.mp4 */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 		FF41BFBCFEFC86B10627F7D2 /* Frameworks */ = {
@@ -178,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A17E78024BE66B500D65962 /* LaunchScreen.storyboard in Resources */,
+				8AB6228C24E5F03F00839017 /* a.mp4 in Resources */,
 				8A17E79324D0D95000D65962 /* GoogleService-Info.plist in Resources */,
 				8A17E77D24BE66B500D65962 /* Assets.xcassets in Resources */,
 				8A17E77B24BE66AF00D65962 /* Main.storyboard in Resources */,
